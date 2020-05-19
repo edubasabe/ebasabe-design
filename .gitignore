@@ -110,7 +110,7 @@ coverage
 exports
 .cache
 build
-
+backend/public/uploads
 
 # Logs
 logs
