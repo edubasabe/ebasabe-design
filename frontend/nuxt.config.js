@@ -51,6 +51,17 @@ module.exports = {
     '@nuxtjs/dotenv'
   ],
   /*
+  ** Apollo module configuration
+  ** See https://www.apollographql.com/
+  */
+  apollo: {
+    clientConfigs: {
+      default: {
+        httpEndpoint: 'http://localhost:1337/graphql'
+      }
+    }
+  },
+  /*
   ** Axios module configuration
   ** See https://axios.nuxtjs.org/options
   */
