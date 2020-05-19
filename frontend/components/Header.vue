@@ -1,25 +1,22 @@
 <template>
   <client-only>
-    <nav class="relative">
-      <div class="max-w-7xl mx-auto px-4 sm:px-6">
-        <div class="flex justify-between items-center border-b-2 border-gray-100 py-6 md:justify-start md:space-x-10">
-          <div class="lg:w-0 lg:flex-1">
-            <a href="#" class="flex">
-              <Logo />
-            </a>
-          </div>
+    <header id="header">
+      <nav>
+        <a href="#" class="logo">
+          <Logo />
+        </a>
+        <ul class="nav-list">
+          <li class>
+            <router-link tag="a" class="navbar-brand" to="/" exact>
+              Inicio
+            </router-link>
+          </li>
+          <li>Porfolio</li>
 
-          <ul class="">
-            <li class>
-              <router-link tag="a" class="navbar-brand" to="/" exact>
-                Inicio
-              </router-link>
-            </li>
-            <!-- <li><router-link tag="a" class="navbar-brand" to="/restaurants" exact>Restaurants</router-link></li> -->
-          </ul>
-        </div>
-      </div>
-    </nav>
+          <!-- <li><router-link tag="a" class="navbar-brand" to="/restaurants" exact>Restaurants</router-link></li> -->
+        </ul>
+      </nav>
+    </header>
   </client-only>
 </template>
 
@@ -33,4 +30,16 @@ export default {
 }
 </script>
 
-<style></style>
+<style lang="sass">
+#header
+  background-color: transparent;
+
+  nav
+    @apply max-w-6xl mx-auto relative flex py-4
+
+    .logo
+      @apply border-gray-100 mr-auto
+    .nav-list
+      @apply flex items-center
+
+</style>
