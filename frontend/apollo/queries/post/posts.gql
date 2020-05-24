@@ -1,8 +1,10 @@
 query Posts {  
   posts {
     id
-    title
-    content
-    cover
+    Title
+    Content
+    Cover {
+      url
+    }
   }
 }

@@ -4,6 +4,15 @@
     <form>
       <input v-model="query" type="search" placeholder="Search something">
     </form>
+    <ul>
+      <li v-for="post in filteredPosts" :key="post.id" class="card-container">
+        <img :src="post.Cover.url" :alt="post.Title" class="card__image">
+        <h4 class="card-title">
+          {{ post.Title }}
+        </h4>
+        <div v-html="post.Content" />
+      </li>
+    </ul>
   </div>
 </template>
 
@@ -26,13 +35,16 @@ export default {
   computed: {
     filteredPosts () {
       return this.posts.filter((post) => {
-        return post.title.toLowerCase().includes(this.query.toLowerCase())
+        return post.Title.toLowerCase().includes(this.query.toLowerCase())
       })
     }
   }
 }
 </script>
 
-<style lang="sass" scoped>
-
+<style lang="sass">
+  .card
+    &__image
+      height: 300px
+      width: 300px
 </style>

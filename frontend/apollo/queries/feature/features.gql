@@ -1,0 +1,9 @@
+query Features {
+  features {
+    image {
+      url
+    }
+    title
+    description
+  }
+}

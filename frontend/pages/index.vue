@@ -1,15 +1,19 @@
 <template>
-  <div class="container">
+  <div class="container w-full">
     <Hero />
+    <Features />
   </div>
 </template>
 
 <script>
 import Hero from '~/components/Hero.vue'
+import Features from '~/components/Features.vue'
 
 export default {
+  name: 'Index',
   components: {
-    Hero
+    Hero,
+    Features
   }
 }
 </script>

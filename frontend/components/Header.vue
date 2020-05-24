@@ -6,13 +6,18 @@
           <Logo />
         </a>
         <ul class="nav-list">
-          <li class>
-            <router-link tag="a" class="navbar-brand" to="/" exact>
+          <li class="nav-list__item">
+            <router-link tag="a" to="/" exact>
               Inicio
             </router-link>
           </li>
-          <li>Porfolio</li>
+          <li class="nav-list__item">
+            Porfolio
+          </li>
 
+          <li class="nav-list__item">
+            Contacto
+          </li>
           <!-- <li><router-link tag="a" class="navbar-brand" to="/restaurants" exact>Restaurants</router-link></li> -->
         </ul>
       </nav>
@@ -32,14 +37,17 @@ export default {
 
 <style lang="sass">
 #header
+  @apply shadow-sm
   background-color: transparent;
 
   nav
-    @apply max-w-6xl mx-auto relative flex py-4
-
-    .logo
+    @apply flex items-center justify-between flex-wrap max-w-6xl mx-auto relative py-4
+    a.logo
       @apply border-gray-100 mr-auto
-    .nav-list
+    ul.nav-list
       @apply flex items-center
+
+      li.nav-list__item
+        @apply mr-6
 
 </style>

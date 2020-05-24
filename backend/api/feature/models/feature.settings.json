@@ -1,8 +1,8 @@
 {
   "kind": "collectionType",
-  "collectionName": "posts",
+  "collectionName": "features",
   "info": {
-    "name": "Post"
+    "name": "Feature"
   },
   "options": {
     "increments": true,
@@ -12,14 +12,16 @@
     "title": {
       "type": "string"
     },
-    "content": {
+    "description": {
       "type": "richtext"
     },
     "image": {
       "model": "file",
       "via": "related",
       "allowedTypes": [
-        "images"
+        "images",
+        "files",
+        "videos"
       ],
       "plugin": "upload",
       "required": false
