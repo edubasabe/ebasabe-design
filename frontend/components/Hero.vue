@@ -1,11 +1,14 @@
 <template>
   <div class="hero">
-    <vue-typed-js
-      class="text-4xl"
-      :strings="typedStrings"
-    >
-      <h2 class="typing" />
-    </vue-typed-js>
+    <div class="container">
+      <vue-typed-js
+        class="hero__title"
+        :strings="typedStrings"
+        loop
+      >
+        <h2 class="typing" />
+      </vue-typed-js>
+    </div>
   </div>
 </template>
 
@@ -31,6 +34,10 @@ export default {
 }
 </script>
 
-<style>
+<style lang="sass">
+.hero
+  @apply bg-blue flex justify-center py-5
+  &__title
+    @apply text-white text-4xl text-center
 
 </style>

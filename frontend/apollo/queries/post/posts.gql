@@ -1,9 +1,9 @@
 query Posts {  
   posts {
     id
-    Title
-    Content
-    Cover {
+    title
+    content
+    image {
       url
     }
   }
