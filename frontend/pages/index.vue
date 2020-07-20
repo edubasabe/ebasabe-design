@@ -1,8 +1,8 @@
 <template>
-  <div>
+  <main>
     <Hero />
     <Features />
-  </div>
+  </main>
 </template>
 
 <script>

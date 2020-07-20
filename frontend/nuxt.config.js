@@ -28,6 +28,7 @@ module.exports = {
   ** Plugins to load before mounting the App
   */
   plugins: [
+    { src: '~/plugins/vueTyped.js' }
   ],
   /*
   ** Nuxt.js dev-modules

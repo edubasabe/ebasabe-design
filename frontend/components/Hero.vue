@@ -36,7 +36,7 @@ export default {
 
 <style lang="sass">
 .hero
-  @apply bg-blue flex justify-center py-5
+  @apply bg-blue flex justify-center py-5 px-4
   &__title
     @apply text-white text-4xl text-center
 
