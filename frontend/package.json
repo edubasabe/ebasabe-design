@@ -23,7 +23,7 @@
     "express": "^4.16.4",
     "graphql": "^15.0.0",
     "graphql-tag": "^2.10.3",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "nuxt": "^2.0.0",
     "sass-loader": "^8.0.2",
     "vue-typed-js": "^0.1.2"
